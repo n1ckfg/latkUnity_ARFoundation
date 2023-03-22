@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Meshing/NormalMeshes.unity
-    guid: b8abb254c2f424d54921b442ad2f9f2e
+    path: Assets/Scenes/Main.unity
+    guid: 21727f06b0f6d4c97adeafa1e34c85b7
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}
