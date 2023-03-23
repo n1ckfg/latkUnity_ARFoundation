@@ -1,3 +1,6 @@
 [submodule "Assets/latkxARFoundation"]
 	path = Assets/latkxARFoundation
 	url = https://github.com/n1ckfg/latkxARFoundation
+[submodule "Assets/latkxColorPicker"]
+	path = Assets/latkxColorPicker
+	url = https://github.com/n1ckfg/latkxColorPicker
