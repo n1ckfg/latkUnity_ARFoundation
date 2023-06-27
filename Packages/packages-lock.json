@@ -178,13 +178,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "org.lightningartist.latk": {
-      "version": "https://github.com/LightningArtist/latkUnity.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "6d16dc5ce933cc62f140ad69b163b8103042253d"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

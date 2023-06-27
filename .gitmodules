@@ -4,6 +4,3 @@
 [submodule "Assets/latkxColorPicker"]
 	path = Assets/latkxColorPicker
 	url = https://github.com/n1ckfg/latkxColorPicker
-[submodule "Assets/latkUnity"]
-	path = Assets/latkUnity
-	url = https://github.com/LightningArtist/latkUnity
