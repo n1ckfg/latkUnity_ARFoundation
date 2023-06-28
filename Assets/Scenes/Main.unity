@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37084502, g: 0.3783903, b: 0.35726327, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273175, g: 0.13414773, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -670,6 +670,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124959225}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &152220331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152220334}
+  - component: {fileID: 152220333}
+  - component: {fileID: 152220332}
+  m_Layer: 0
+  m_Name: ONNX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &152220332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152220331}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd40284cb9964194e8558b1ecdfdc97b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onnx: {fileID: 152220333}
+--- !u!114 &152220333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152220331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ca38da38b05334cb0b29201c788dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 21212410}
+  followTarget: {fileID: 0}
+  camIsMain: 1
+  matchMainCamSettings: 0
+  nnModel: {fileID: 5022602860645237092, guid: 46d4bdd1f6ba837438c0cd5c37ed9671, type: 3}
+  inferenceResolution: 512
+  targetMtl: {fileID: 2100000, guid: c4574e9f686791d43825b47d2e4ac1c9, type: 2}
+  targetMtlProp: _MainTex
+  displayOutputTexture: 0
+  latk: {fileID: 1348886579}
+  skeleton_threshold: 0.01
+  trace_c: 1
+  minPoints: 3
+  distanceThreshold: 0.1
+  flipInputX: 0
+  flipInputY: 1
+  flipOutputX: 1
+  flipOutputY: 0
+  inputRTex: {fileID: 0}
+  infRTex: {fileID: 0}
+  outputRTex: {fileID: 0}
+--- !u!4 &152220334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152220331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &152867932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,7 +2734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 1348886579}
-  arSession: {fileID: 1557857981}
+  onnx: {fileID: 152220333}
+  arMgr: {fileID: 1557857981}
   showHideGeneric: {fileID: 1535673156}
   fontSize: 25
   showButtons: 1
