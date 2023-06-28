@@ -2655,6 +2655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightningArtist: {fileID: 1348886579}
+  arSession: {fileID: 1557857981}
   showHideGeneric: {fileID: 1535673156}
   fontSize: 25
   showButtons: 1
