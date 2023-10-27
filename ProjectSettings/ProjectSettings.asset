@@ -11,7 +11,7 @@ PlayerSettings:
   defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
-  accelerometerFrequency: 60
+  accelerometerFrequency: 100
   companyName: NFG Animation
   productName: Lightning Artist
   defaultCursor: {fileID: 0}
@@ -236,7 +236,7 @@ PlayerSettings:
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
   iOSAutomaticallyDetectAndAddCapabilities: 1
-  appleEnableProMotion: 0
+  appleEnableProMotion: 1
   shaderPrecisionModel: 0
   clonedFromGUID: 56e7a2d3a00f33d44bdd161b773c35b5
   templatePackageId: com.unity.3d@1.0.0
@@ -489,7 +489,7 @@ PlayerSettings:
   - m_BuildTarget: PS4Player
     m_GraphicsJobs: 0
   - m_BuildTarget: iOSSupport
-    m_GraphicsJobs: 0
+    m_GraphicsJobs: 1
   - m_BuildTarget: WindowsStandaloneSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: XboxOnePlayer
@@ -526,6 +526,7 @@ PlayerSettings:
   m_TemplateCustomTags: {}
   mobileMTRendering:
     Android: 1
+    iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
