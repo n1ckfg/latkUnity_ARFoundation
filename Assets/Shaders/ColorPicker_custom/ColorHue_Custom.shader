@@ -2,7 +2,7 @@
 
 Shader "ColorPicker/ColorHue_Custom" {
 	SubShader {
-	    Pass {	
+		Pass {	
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag

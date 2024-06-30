@@ -4,8 +4,9 @@ Shader "ColorPicker/ColorSaturationBrightness_Custom" {
 	Properties {
 	    _Color ("Main Color", Color) = (0.75,0.15,0.56,1)
 	}
+
 	SubShader {
-	    Pass {	
+		Pass {	
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag

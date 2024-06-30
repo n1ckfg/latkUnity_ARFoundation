@@ -184,7 +184,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 791
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -285,7 +285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 603480918}
+  - {fileID: 1098827055}
   - {fileID: 1422389234}
   - {fileID: 1906722125}
   m_Father: {fileID: 1557857983}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 21828509}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MinBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 152867936}
   - component: {fileID: 152867935}
   - component: {fileID: 152867934}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColorHuePicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,6 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fadb6079bd7bf6142a7794994c0e8b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 1098827057}
   pickMode: 1
   showHideGeneric: {fileID: 1535673156}
   minBound: {fileID: 21828509}
@@ -676,7 +677,7 @@ GameObject:
   - component: {fileID: 548135729}
   - component: {fileID: 548135728}
   - component: {fileID: 548135727}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColorIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603480918}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: color_root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +791,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1535673159}
-  m_Father: {fileID: 21212416}
+  m_Father: {fileID: 1098827055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671264639
 GameObject:
@@ -803,7 +804,7 @@ GameObject:
   - component: {fileID: 671264640}
   - component: {fileID: 671264642}
   - component: {fileID: 671264641}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +983,7 @@ GameObject:
   - component: {fileID: 923771819}
   - component: {fileID: 923771818}
   - component: {fileID: 923771817}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColorSaturationBrightnessPicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,6 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fadb6079bd7bf6142a7794994c0e8b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
   pickMode: 1
   showHideGeneric: {fileID: 1535673156}
   minBound: {fileID: 1335563535}
@@ -1087,7 +1089,7 @@ GameObject:
   - component: {fileID: 1007238561}
   - component: {fileID: 1007238560}
   - component: {fileID: 1007238559}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Thumb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,6 +1182,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007238557}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1098827054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1098827055}
+  - component: {fileID: 1098827057}
+  - component: {fileID: 1098827056}
+  m_Layer: 0
+  m_Name: UICamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1098827055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098827054}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 603480918}
+  m_Father: {fileID: 21212416}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1098827056
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098827054}
+  m_Enabled: 1
+--- !u!20 &1098827057
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098827054}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.1
+  far clip plane: 30
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 32
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1210916722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,7 +1550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1335563535}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MinBound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,7 +1658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437508, guid: bd6b520ae512fe14284192c59b70f0f3, type: 3}
       propertyPath: refineStrokes
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11437508, guid: bd6b520ae512fe14284192c59b70f0f3, type: 3}
       propertyPath: writeFileName
@@ -1891,7 +1986,7 @@ GameObject:
   - component: {fileID: 1535673159}
   - component: {fileID: 1535673158}
   - component: {fileID: 1535673156}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ColorPickerHydra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2184,7 +2279,7 @@ GameObject:
   - component: {fileID: 1993454369}
   - component: {fileID: 1993454371}
   - component: {fileID: 1993454370}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2268,7 +2363,7 @@ GameObject:
   - component: {fileID: 2107345819}
   - component: {fileID: 2107345818}
   - component: {fileID: 2107345817}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Thumb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
