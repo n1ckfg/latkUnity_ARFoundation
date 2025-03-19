@@ -148,15 +148,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.xr.arkit-face-tracking": {
-      "version": "5.0.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.xr.arkit": "5.0.2"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.xr.core-utils": {
       "version": "2.4.0",
       "depth": 1,

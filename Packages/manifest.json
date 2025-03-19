@@ -10,7 +10,6 @@
     "com.unity.xr.arcore": "5.1.5",
     "com.unity.xr.arfoundation": "5.1.5",
     "com.unity.xr.arkit": "5.1.5",
-    "com.unity.xr.arkit-face-tracking": "5.0.2",
     "com.unity.xr.interaction.toolkit": "2.6.3",
     "org.lightningartist.latk": "https://github.com/LightningArtist/latkUnity.git",
     "com.unity.modules.ai": "1.0.0",

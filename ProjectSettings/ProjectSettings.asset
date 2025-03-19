@@ -168,7 +168,7 @@ PlayerSettings:
   buildNumber:
     Standalone: 0
     VisionOS: 0
-    iPhone: 15
+    iPhone: 17
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
@@ -556,9 +556,12 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: Camera required for AR
-  locationUsageDescription: Location required for Geo Anchors
-  microphoneUsageDescription: Microphone required for AR
+  cameraUsageDescription: The app uses the camera and lidar for player position and
+    brushstroke painting. No image or depth data is recorded.
+  locationUsageDescription: The app uses location services as a functional requirement
+    of Unity ARFoundation. No location data is recorded.
+  microphoneUsageDescription: The app uses microphone services as a functional requirement
+    of Unity ARFoundation. No sound data is recorded.
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
@@ -823,7 +826,7 @@ PlayerSettings:
     WebGL: UNITY_POST_PROCESSING_STACK_V2
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2
-    iPhone: UNITY_POST_PROCESSING_STACK_V2;UNITY_XR_ARKIT_LOADER_ENABLED;UNITY_XR_ARKIT_FACE_TRACKING_ENABLED
+    iPhone: UNITY_POST_PROCESSING_STACK_V2;UNITY_XR_ARKIT_LOADER_ENABLED
     tvOS: UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture:
