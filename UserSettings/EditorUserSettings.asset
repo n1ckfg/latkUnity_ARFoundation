@@ -5,6 +5,9 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    HideARKitFaceTrackingDeprecatedWarning:
+      value: 0550581500
+      flags: 0
     RecentlyUsedSceneGuid-0:
       value: 020900045205580a580d087345775c16434e1a72787e73612c714f6be3e36268
       flags: 0
@@ -37,4 +40,5 @@ EditorUserSettings:
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
+  m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1
